@@ -6,8 +6,9 @@ function App() {
   return (
     <Router>
     <Routes>
-      <Route path="/"  component={<Calculator/>} />
-      <Route path="/result/:result" component={<Result/>} />
+      <Route path="/"  component={<Calculator/>} >
+        <Route path="/result/:result" component={<Result/>} />
+      </Route>
     </Routes>
   </Router>
   );
